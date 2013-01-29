@@ -1,0 +1,31 @@
+delivery_method: sendmail # smtp or sendmail
+
+# The recipient for the commit:
+mailinglist: mtricolici@tacitknowledge.com
+
+# set to true if you want to ignore empty merge messages
+ignore_merge: true
+
+# Optional parameter for the subject-line of the mail
+emailprefix: [confoo]
+
+# Decorate files with link to a webview. Possible values: none or gitweb
+link_files: gitweb
+
+gitweb:
+  path: https://git.tacitknowledge.com/git
+  project: hale%2Fhale.git
+
+#Limit lines
+lines_per_diff: 1000
+
+smtp_server:
+  address: localhost
+  port: 25
+  domain: tacitknowledge.com
+
+sendmail_options:
+  location: /usr/sbin/sendmail
+  arguments: -i -t
+
+
